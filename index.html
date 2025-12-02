@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!------- navbar----- -->
+
+    <div>
+        <ul class="Food-menu">
+            <i  onclick="toggle()" class="fa-solid fa-sliders Toggle"></i>
+            <li  class="hdeal" onclick="hotdeal()">HOT DEALS</li>
+            <li  class="chicken-burger" onclick="chickenburger()">Chicken Burger</li>
+            <li  class="beef-burger" onclick="beefburger()">Beef burger</li>
+            <li  class="zinger-burger"  onclick="zingerburger()">Zinger burger</li>
+            <li  class="sandwitch"  onclick="sadnwitch()">Sandwitch</li>
+            <li  class="roll"  onclick="roll()">Roll</li>
+            <li  class="barbq"  onclick="bbq()">BBQ</li>
+            <li  class="tika"  onclick="tikka()">Tikka</li>
+        </ul>
+    </div>
+          
+
+
+
+       <div class="main-container">
+           
+
+
+
+
+          <!-- Main Container for the Search Bar -->
+    <form action="#" class="search-form" onsubmit="event.preventDefault(); ">
+        
+        <!-- Input Field -->
+        <input 
+            type="text" 
+            placeholder="Search..." 
+            aria-label="Search query"
+            class="search-input"
+        >
+
+        <!-- Search Button with surrounding margin/border effect -->
+        <div class="search-button-container">
+            <button 
+                type="submit" 
+                aria-label="Submit search"
+                class="search-button"
+            >
+                <!-- Magnifying Glass Icon (SVG for quality) -->
+                <svg  onclick="searchtoogle()" class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </button>
+        </div>
+    </form>
+           
+    <!-- <input type="text" id="searchInput" placeholder="Search something..." />
+<button id="searchBtn">Search</button> -->
+      
+
+      <!------ Hot Deal poster-->
+      <div class="Hot-deal">
+       <p class="hot-deal-text">HOT DEALS</p>
+      </div>
+
+
+
+
+
+      <!-- ------Cards ------ -->
+          
+
+       <div class="Menu-cards"> 
+
+     
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+     </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

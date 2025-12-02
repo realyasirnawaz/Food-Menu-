@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Food-menu{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color:#b40f0f;
+    padding: 10px;
+}
+
+
+.searchbar{
+    position: relative;
+}
+
+
+
+
+ /* CSS Variables for easy customization */
+        :root {
+            --bg-color: #f0f0f0; 
+            --input-bg-color: #ffffff;
+            --button-color: #333333;
+            --button-hover-color: #1a1a1a;
+            --border-radius: 40px;
+            --button-size: 60px; /* Defines the overall height of the bar */
+        }
+
+        /* 1. Basic Page Setup and Centering */
+     
+
+        /* 2. Search Bar Container - Defines the pill shape and shadow */
+        .search-form {
+            display: flex;
+            width: 100%;
+            /* max-width: 900px; */
+            height: var(--button-size);
+            border-radius: var(--border-radius);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+            background-color: var(--input-bg-color);
+            margin-bottom: 20px;
+            overflow: hidden; /* Essential to crop the inner content to the pill shape */
+        }
+
+        /* 3. Input Field Styling */
+        .search-input {
+            flex-grow: 1; /* Allows the input to take up all available space */
+            border: none;
+            padding: 0 25px;
+            font-size: 1.125rem;
+            color: #4b5563; 
+            background-color: transparent; 
+            outline: none; 
+            /* Vertically align text by setting line-height equal to container height */
+            line-height: var(--button-size); 
+        }
+
+        .search-input::placeholder {
+            color: #9ca3af; /* Light gray placeholder text color */
+        }
+
+        /* 4. Button Wrapper - Creates the visual white margin/border effect */
+        .search-button-container {
+            padding: px; /* This padding creates the visible white gap/border */
+        }
+
+        /* 5. Search Button Styling */
+        .search-button {
+            width: var(--button-size);
+            height: var(--button-size);
+            border: none;
+            border-radius: var(--border-radius); /* Fully rounded button */
+            background-color:#b40f0f;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0; 
+            transition: background-color 0.15s ease-in-out;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        
+        }
+
+        .search-button:hover {
+            background-color: var(--button-hover-color);
+        }
+
+        /* 6. Magnifying Glass Icon (SVG) Styling */
+        .search-icon {
+            width: 25px;
+            height: 25px;
+            stroke: white;
+            fill: none;
+            stroke-width: 2;
+            
+        }
+
+
+
+
+li{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    border: 2px solid white;
+    padding: 4px 10px;
+    border-radius: 10px;
+}
+li:hover{
+    background-color: #d43e3e;
+    cursor: pointer;
+}
+.Toggle{
+    margin-top: 8px;
+    font-size: 25px;
+    color: white;
+}
+.Hot-deal{
+    height:150px;
+    width: 100%;
+    background-color:#b40f0f;
+    /* padding: 20px 40px; */
+    border-radius: 10px;
+    
+    
+}
+
+.main-container{
+    margin: 0 auto ;
+    height: auto;
+    /* background-color: red; */
+    width: 65%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+   
+       
+    
+}
+.hot-deal-text{
+    text-align: center;
+    font-size: 70px;
+    font-weight: 800px;
+    color: white;
+    margin: auto 0 ;
+}
+.Menu-cards{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    
+}
+
+.price-btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.price-btn p {
+    font-size: 20px;
+    margin-top: 5px;
+}
+.add-btn{
+    background-color: #dc2626;
+    padding: 1px 15px 1px 15px;
+    /* padding: 10px 20px; */
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
